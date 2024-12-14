@@ -16,3 +16,52 @@
 @import url('./badges.css');
 @import url('./back-link.css');
 @import url('./footer.css');
+
+body {
+  font-family: 'Montserrat', sans-serif;
+}
+
+.main-links-list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: auto;
+  position: relative;
+}
+
+.main-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 256px;
+  height: 48px;
+  background-color: palevioletred;
+  border-radius: 8px;
+  text-transform: uppercase;
+  font-weight: 700;
+  border-style: solid;
+  margin-right: 48px;
+}
+.main-links-list li:nth-child(2) .main-link {
+  background-color: cadetblue;
+}
+
+.nav-home {
+  display: flex;
+  justify-content: baseline;
+  align-items: center;
+  height: 100%;
+  padding: 0 8px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  border-right: 2px solid black;
+  border-top-right-radius: 12px;
+  border-bottom-right-radius: 12px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.nav-home:hover {
+  color: floralwhite;
+  background-color: rgb(0, 0, 0, 0.4);
+}
